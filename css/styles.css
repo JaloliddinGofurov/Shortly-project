@@ -185,3 +185,36 @@ img {
 .site-header__login-link:active {
   opacity: 0.6;
 }
+
+/* HERO */
+.hero {
+  padding-top: 92px;
+  padding-bottom: 222px;
+  background-color: #fff;
+  background-image: url(../img/hero-img.svg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 476px)  top 30px;
+}
+.hero__inner {
+  width: 100%;
+  max-width: 565px;
+}
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 90px;
+  letter-spacing: -2px;
+  color: var(--text-color-dark);
+}
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  font-weight: normal;
+}
+.hero__img {
+}
