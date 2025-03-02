@@ -94,6 +94,7 @@ img {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  white-space: nowrap;
 }
   .button:hover {
   background-color: var(--accsent-color-hover);
@@ -115,6 +116,29 @@ img {
 .button-rectangle-big {
   border-radius: 10px;
 }
+
+/* PLACEHOLDER */
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder  {
+  color: rgba(52, 49, 61, 0.5);
+  opacity: 1;
+}
+
+/* Visually hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 
 /* MAIN-CONTENT */
 .main-content {
@@ -216,5 +240,64 @@ img {
   letter-spacing: 0.15px;
   font-weight: normal;
 }
-.hero__img {
+
+/* INDEX-URL-FORM-SHORTENER-FEATURES-WRAPPER */
+.index-url-form-shortener-features-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-bg);
+}
+.index-url-form-shortener-features-wrapper__url-shortener {
+  margin-top: -84px;
+}
+/* Url shortener */
+.url-shortener {
+}
+.url-shortener__form {
+  display: flex;
+  padding: 52px 64px;
+  border-radius: 10px;
+  background-color: #4B3F6B;
+  background-image: url(../img/purple-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.url-shortener__input-wrapper {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+.url-shortener__input {
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+  padding: 14px 32px;
+  border-radius:  10px;
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--text-color-dark);
+  border: 3px solid transparent;
+}
+.url-shortener__input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: var(--error-color);
+  color: var(--error-color);
+}
+.url-shortener__error-msg {
+  display: none;
+}
+
+
+.url-shortener__input:not(:focus):not(:placeholder-shown):invalid ~ .url-shortener__error-msg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--error-color);
+  letter-spacing: 0.11px;
 }
