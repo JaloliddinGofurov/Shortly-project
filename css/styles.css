@@ -110,10 +110,10 @@ img {
 .button-big {
   padding: 18px 40px 16px;
 }
-.button-rectangle {
+.button--rectangle {
   border-radius:  5px;
 }
-.button-rectangle-big {
+.button--rectangle-big {
   border-radius: 10px;
 }
 
@@ -249,6 +249,7 @@ img {
 }
 .index-url-form-shortener-features-wrapper__url-shortener {
   margin-top: -84px;
+  margin-bottom: 120px;
 }
 /* Url shortener */
 .url-shortener {
@@ -256,6 +257,7 @@ img {
 .url-shortener__form {
   display: flex;
   padding: 52px 64px;
+  margin-bottom: 24px;
   border-radius: 10px;
   background-color: #4B3F6B;
   background-image: url(../img/purple-bg.svg);
@@ -300,4 +302,35 @@ img {
   font-style: italic;
   color: var(--error-color);
   letter-spacing: 0.11px;
+}
+
+.url-shortener__results {
+  font-size: 20px;
+  line-height: 36px;
+}
+.url-shortener__result {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: var(--text-color-dark);
+}
+.url-shortener__result:not(:last-child) {
+  margin-bottom: 16px;
+}
+.url-shortener__original-link {
+  width: 100%;
+  margin-right: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.url-shortener__short-link {
+  margin-right: 24px;
+  color: var(--accsent-color);
+  text-decoration: none;
+}
+.url-shortener__copy-button {
+  min-width: 103px;
 }
