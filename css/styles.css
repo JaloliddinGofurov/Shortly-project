@@ -493,6 +493,7 @@ img {
 .site-footer__menu-link {
   color: #bfbfbf;
   text-decoration: none;
+  text-transform: capitalize;
 }
 .site-footer__menu-link:hover {
   color: var(--accsent-color);
